@@ -8,6 +8,8 @@
         <module>core</module>
         <module>persistence</module>
         <module>datamodel</module>
+        <module>client-web</module>
+        <module>api</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
