@@ -12,7 +12,7 @@
     <artifactId>bms</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>bms</name>
-    <description>BMS for Cook Becik at Brebeuf</description>
+    <description>BMS for Coop Becik at Brebeuf</description>
 
     <properties>
         <java.version>11</java.version>
