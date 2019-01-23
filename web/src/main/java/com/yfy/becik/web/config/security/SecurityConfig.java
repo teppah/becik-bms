@@ -4,6 +4,8 @@ import com.yfy.becik.web.util.Roles;
 import com.yfy.becik.web.util.ViewMappings;
 import com.yfy.becik.web.util.ViewNames;
 import lombok.extern.java.Log;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -23,5 +25,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
             .formLogin()
                 .loginPage(ViewMappings.LOGIN).failureUrl(ViewMappings.LOGIN_FAIL);
+    }
+
+    @Autowired
+    public void configureGlobalSecurity(AuthenticationManagerBuilder auth) throws Exception {
+        auth
+                .inMemoryAuthentication()
+                    .withUser("user").password("pass").roles(Roles.USER);
     }
 }
