@@ -4,11 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
-        <module>web</module>
         <module>core</module>
         <module>persistence</module>
         <module>datamodel</module>
-        <module>web</module>
+        <module>web-access</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
