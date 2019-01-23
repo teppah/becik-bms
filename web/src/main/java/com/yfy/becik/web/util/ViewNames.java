@@ -10,5 +10,9 @@ public final class ViewNames {
         throw new UnsupportedOperationException("bruh");
     }
 
+    public static final String ROOT = "/";
+
     public static final String HOME = "home";
+    public static final String DASHBOARD = "dashboard";
+    public static final String LOGIN_PAGE = "login";
 }
